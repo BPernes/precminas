@@ -11,9 +11,15 @@ const Navbar = () => {
       </div>
 
       <div className='linkContainer'>
-        <a className='link' href='#início'>Início</a>
-        <a className='link' href='#sobre'>Sobre</a>
-        <a className='link' href='#contato'>Contato</a>
+        <a className='link' href='#início'>
+          Início
+        </a>
+        <a className='link' href='#sobre'>
+          Sobre
+        </a>
+        <a className='link' href='#contato'>
+          Contato
+        </a>
       </div>
 
       <button className='ligueAgora'>

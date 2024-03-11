@@ -1,45 +1,45 @@
 .navbar {
-	display: flex;
-	justify-content: space-between;
-	padding: 16px 160px 16px 160px;
-	background-color: var(--clr-accent);
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 160px 16px 160px;
+  background-color: var(--clr-accent);
 }
 
 .linkContainer,
 .logoContainer,
 .ligueAgora {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .link,
-.logoContainer > span  {
-	margin-left: 16px;
-	font-size: 1.25em;
-	font-weight: var(--fw-bold);
-	color: var(--clr-background);
+.logoContainer > span {
+  margin-left: 16px;
+  font-size: 1.25em;
+  font-weight: var(--fw-bold);
+  color: var(--clr-background);
 }
 
 .link {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .ligueAgora {
-	background-color: var(--clr-primary);
-	color: var(--clr-background);
-	padding: 1rem;
-	border-radius: 0.5em;
-	border-style: none;
-	font-size: 1.25em;
-	font-weight: var(--fw-bold);
+  background-color: var(--clr-primary);
+  color: var(--clr-background);
+  padding: 1rem;
+  border-radius: 0.5em;
+  border-style: none;
+  font-size: 1.25em;
+  font-weight: var(--fw-bold);
 }
 
 .ligueAgora > img {
-	padding-left: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 @media (max-width: 744px) {
-	.navbar {
-		padding: 16px 32px 16px 32px;
-	}
+  .navbar {
+    padding: 16px 32px 16px 32px;
+  }
 }
