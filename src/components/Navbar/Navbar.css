@@ -1,21 +1,49 @@
-.navbar {
+header {
   display: flex;
   justify-content: space-between;
   padding: 16px 160px 16px 160px;
   background-color: var(--clr-accent);
 }
 
-.linkContainer,
-.logoContainer,
-.ligueAgora {
-  display: flex;
+li {
+  list-style: none;
+}
+
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.title-1-bold-white {
+  font-size: 1.25em;
+  font-weight: var(--fw-bold);
+  color: var(--clr-background);
+}
+
+.primary-nav-itens {
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header-logo,
+.ligueButton {
   align-items: center;
 }
 
-.link,
-.logoContainer > span {
-  margin-left: 16px;
-  font-size: 1.25em;
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.header-logo > span {
+  font-size: 1.5em;
   font-weight: var(--fw-bold);
   color: var(--clr-background);
 }
@@ -24,7 +52,7 @@
   text-decoration: none;
 }
 
-.ligueAgora {
+.ligueButton {
   background-color: var(--clr-primary);
   color: var(--clr-background);
   padding: 1rem;
@@ -34,12 +62,63 @@
   font-weight: var(--fw-bold);
 }
 
-.ligueAgora > img {
-  padding-left: 0.5rem;
+.mobile-nav-toggle {
+  display: none;
 }
 
-@media (max-width: 744px) {
-  .navbar {
-    padding: 16px 32px 16px 32px;
+@media (max-width: 972px) {
+  header {
+    padding: 1rem 2rem 1rem 2rem;
   }
+}
+
+@media (max-width: 750px) {
+  .primary-nav-itens {
+    position: fixed;
+    inset: 0 0 0 30%;
+
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+    padding: min(30vh, 10rem) 2em;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in;
+
+    background: hsl(220 51% 36% / 0.3);
+    backdrop-filter: blur(1rem);
+  }
+
+  .primary-nav-itens[data-visible='true'] {
+    transform: translateX(0%);
+  }
+
+  .ligueButton {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    z-index: 9999;
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    background-image: url('/src/assets/icons/hamburguer.svg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 2rem;
+    border: 0;
+    aspect-ratio: 1;
+    top: 1.5rem;
+    right: 1rem;
+  }
+
+  .mobile-nav-toggle:hover {
+    cursor: pointer;
+  }
+
+  .mobile-nav-toggle[aria-expanded='true'] {
+    background-image: url('/src/assets/icons/close.svg');
+  }
+
 }

@@ -1,32 +1,54 @@
 import './Navbar.css'
-import logo from '../../../public/precminas.svg'
+import logo from '/precminas.svg'
 import phone from '/src/assets/phone.svg'
+import { useState } from 'react'
 
 const Navbar = () => {
+
+  const [isNavMenuOpen, setIsNavMenuOpen] = useState(false)
+  const [isExpanded, setIsExpanded] = useState(false)
+
+  const handleNavMenuClick = () => {
+    if (!isNavMenuOpen) {
+      return (setIsNavMenuOpen(true), setIsExpanded(true))
+    }
+    setIsNavMenuOpen(false)
+    setIsExpanded(false)
+  }
+
   return (
-    <nav className='navbar'>
-      <div className='logoContainer'>
-        <img src={logo} alt='três letras p juntas formando uma caixa' />
+    <header className='flex'>
+      <div className='header-logo flex'>
+        <img src={logo} alt='três letras p juntas, formando uma caixa' />
         <span>PRECMINAS</span>
       </div>
 
-      <div className='linkContainer'>
-        <a className='link' href='#início'>
-          Início
-        </a>
-        <a className='link' href='#sobre'>
-          Sobre
-        </a>
-        <a className='link' href='#contato'>
-          Contato
-        </a>
-      </div>
+      <nav>
+        <ul data-visible={isNavMenuOpen} id='primary-navigation' className='primary-nav-itens flex'>
+          <li>
+            <a className='link title-1-bold-white' href='#início'>
+              Início
+            </a>
+          </li>
+          <li>
+            <a className='link title-1-bold-white' href='#sobre'>
+              Sobre
+            </a>
+          </li>
+          <li>
+            <a className='link title-1-bold-white' href='#contato'>
+              Contato
+            </a>
+          </li>
+        </ul>
+      </nav>
 
-      <button className='ligueAgora'>
+      <button onClick={handleNavMenuClick} className='mobile-nav-toggle' aria-controls='primary-navigation' aria-expanded={isExpanded}><span className='mobile-nav-toggle sr-only'>Menu</span></button>
+      <button className='ligueButton flex'>
         Ligue agora
         <img src={phone} alt='ícone de telefone' />
       </button>
-    </nav>
+    </header>
   )
 }
 
