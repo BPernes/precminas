@@ -1,0 +1,46 @@
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fs-main-header {
+  font-size: var(--fs-main-header);
+}
+
+.fs-title {
+  font-size: var(--fs-title);
+}
+
+.fs-body {
+  font-size: var(--fs-body);
+}
+
+.text-white {
+  color: var(--clr-text-white)
+}
+
+.text-black {
+  color: var(--clr-text-black)
+}
+
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
