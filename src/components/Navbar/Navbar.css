@@ -9,22 +9,6 @@ li {
   list-style: none;
 }
 
-.sr-only {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.title-1-bold-white {
-  font-size: 1.25em;
-  font-weight: var(--fw-bold);
-  color: var(--clr-background);
-}
-
 .primary-nav-itens {
   padding: 0;
   justify-content: space-between;
@@ -37,29 +21,15 @@ li {
   align-items: center;
 }
 
-.flex {
-  display: flex;
-  gap: var(--gap, 1rem);
-}
-
-.header-logo > span {
-  font-size: 1.5em;
-  font-weight: var(--fw-bold);
-  color: var(--clr-background);
-}
-
 .link {
   text-decoration: none;
 }
 
 .ligueButton {
   background-color: var(--clr-primary);
-  color: var(--clr-background);
   padding: 1rem;
   border-radius: 0.5em;
   border-style: none;
-  font-size: 1.25em;
-  font-weight: var(--fw-bold);
 }
 
 .mobile-nav-toggle {

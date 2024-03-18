@@ -1,0 +1,45 @@
+.hero-section {
+  display: block;
+}
+
+.hero-wrapper {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(min(550px, 100%), 1fr));
+  padding: 5rem 10rem 5rem 10rem;
+  gap: 2rem;
+}
+
+.hero-wrapper>img {
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.hero-text-container>button {
+  background-color: var(--clr-accent);
+  padding: 1rem;
+  border-radius: 0.5em;
+  border-style: none;
+  max-width: fit-content;
+}
+
+.image-wrapper>img {
+  border-radius: 1rem;
+}
+
+@media (max-width: 972px) {
+  .hero-wrapper {
+    padding: 1rem 2rem 1rem 2rem;
+    grid-template-areas:
+      "image"
+      "text";
+  }
+
+  .hero-text-container {
+    grid-area: text;
+  }
+
+  .image-wrapper {
+    grid-area: image;
+  }
+}

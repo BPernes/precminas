@@ -14,6 +14,10 @@
   font-size: var(--fs-main-header);
 }
 
+.fs-h3 {
+  font-size: var(--fs-h3);
+}
+
 .fs-title {
   font-size: var(--fs-title);
 }
