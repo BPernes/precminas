@@ -1,11 +1,16 @@
+import { useContext } from 'react'
+import { InputRefContext } from '../../contexts/InputRefProvider/InputRefProvider'
 import './ContactForm.css'
 
 const ContactForm = () => {
+  const inputRef = useContext(InputRefContext)
+
   return (
     <form action='submit' method='post' className='contact-form-wrapper | flex'>
       <div className='form-input'>
         <label className='fs-title fw-bold text-white' htmlFor='nome'>Seu nome</label>
         <input
+          ref={inputRef}
           className='fs-body'
           type='text'
           name='nome'

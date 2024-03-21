@@ -2,8 +2,13 @@ import './Interrested.css'
 import '../../utils/styles.css'
 import arrow_down from '/src/assets/icons/arrow-down.svg'
 import zap from '/src/assets/icons/zap.svg'
+import { useContext } from 'react'
+import { InputRefContext } from '../../contexts/InputRefProvider/InputRefProvider'
 
 const Interrested = () => {
+  const inputRef = useContext(InputRefContext)
+  const handleClick = () => inputRef?.current?.focus()
+
   return (
     <section className='interrested | flex section-spacing'>
       <h2 className='fs-h3 text-white'>Está interessado?</h2>
@@ -14,7 +19,7 @@ const Interrested = () => {
         WhatsApp.
       </p>
       <div className='button-container | flex'>
-        <button className='formButton | flex text-white fs-title fw-bold'>
+        <button onClick={handleClick} className='formButton | flex text-white fs-title fw-bold'>
           Preencha o formulário
           <img src={arrow_down} alt="seta para baixo" />
         </button>
