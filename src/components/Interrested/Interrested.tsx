@@ -18,10 +18,10 @@ const Interrested = () => {
           Preencha o formulário
           <img src={arrow_down} alt="seta para baixo" />
         </button>
-        <button className='zapButton | flex text-white fs-title fw-bold'>
+        <a href='https://wa.me/5531991035736?text=Gostaria%20de%20negociar%20meu%20precatório' className='zapButton | flex text-white fs-title fw-bold' target='_blank'>
           Fale conosco
           <img src={zap} alt="ícone de telefone dentro de um balão" />
-        </button>
+        </a>
       </div>
     </section>
   )

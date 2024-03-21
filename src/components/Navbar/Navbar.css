@@ -26,10 +26,12 @@ li {
 }
 
 .ligueButton {
+  cursor: pointer;
   background-color: var(--clr-primary);
   padding: 1rem;
   border-radius: 0.5em;
   border-style: none;
+  text-decoration: none;
 }
 
 .mobile-nav-toggle {

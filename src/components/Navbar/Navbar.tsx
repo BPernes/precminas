@@ -1,7 +1,7 @@
 import '../../utils/styles.css'
 import './Navbar.css'
 import logo from '/precminas.svg'
-import phone from '/src/assets/phone.svg'
+import zap from '/src/assets/icons/zap.svg'
 import { useState } from 'react'
 
 const Navbar = () => {
@@ -45,10 +45,10 @@ const Navbar = () => {
       </nav>
 
       <button onClick={handleNavMenuClick} className='mobile-nav-toggle' aria-controls='primary-navigation' aria-expanded={isExpanded}><span className='mobile-nav-toggle sr-only'>Menu</span></button>
-      <button className='ligueButton | flex text-white fs-title fw-bold'>
-        Ligue agora
-        <img src={phone} alt='ícone de telefone' />
-      </button>
+      <a href='https://wa.me/5531991035736?text=Gostaria%20de%20negociar%20meu%20precatório' target='_blank' className='ligueButton | flex text-white fs-title fw-bold'>
+        Ligue Agora
+        <img src={zap} alt='ícone de telefone' />
+      </a>
     </header>
   )
 }
