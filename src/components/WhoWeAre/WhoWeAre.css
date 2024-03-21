@@ -1,0 +1,36 @@
+.who-we-are {
+  /* background-image: url(/src/assets/images/metting.png); */
+  background-color: var(--clr-accent);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: end;
+
+  padding: 2rem 10rem 2rem 10rem;
+}
+
+.description {
+  max-width: 60ch;
+}
+
+.description>span {
+  color: var(--clr-primary);
+}
+
+@media (max-width: 60.75em) {
+  .who-we-are {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 46.875em) {
+  .who-we-are {
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+}

@@ -2,9 +2,9 @@ import './ContactForm.css'
 
 const ContactForm = () => {
   return (
-    <form action='submit' method='post,'>
+    <form action='submit' method='post' className='contact-form-wrapper | flex'>
       <div className='form-input'>
-        <label className='fs-title' htmlFor='nome'>Seu nome</label>
+        <label className='fs-title fw-bold text-white' htmlFor='nome'>Seu nome</label>
         <input
           className='fs-body'
           type='text'
@@ -15,7 +15,7 @@ const ContactForm = () => {
         />
       </div>
       <div className='form-input'>
-        <label className='fs-title' htmlFor='email'>Email</label>
+        <label className='fs-title fw-bold text-white' htmlFor='email'>Email</label>
         <input
           className='fs-body'
           type='text'
@@ -26,7 +26,7 @@ const ContactForm = () => {
         />
       </div>
       <div className='form-input'>
-        <label className='fs-title' htmlFor='assunto'>Assunto</label>
+        <label className='fs-title fw-bold text-white' htmlFor='assunto'>Assunto</label>
         <input
           className='fs-body'
           type='text'
@@ -37,16 +37,16 @@ const ContactForm = () => {
         />
       </div>
       <div className='form-input'>
-        <label className='fs-title' htmlFor='mensagem'>Mensagem</label>
+        <label className='fs-title fw-bold text-white' htmlFor='mensagem'>Mensagem</label>
         <textarea
           className='fs-body'
           name='mensagem'
           id='mensagem'
           placeholder='Como podemos te ajudar?'
           cols='30'
-          rows='10'
+          rows='5'
         ></textarea>
-        <button className='fs-title' type='submit'>Enviar</button>
+        <button className='form-button | fs-title fw-bold text-white' type='submit'>Enviar</button>
       </div>
     </form>
   )

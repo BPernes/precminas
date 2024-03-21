@@ -3,43 +3,47 @@
 }
 
 .hero-wrapper {
-  display: grid;
-  grid-template-columns:
-    repeat(auto-fit, minmax(min(550px, 100%), 1fr));
-  padding: 5rem 10rem 5rem 10rem;
-  gap: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 0 10rem 0 10rem;
+  /* background-image: url(/src/assets/images/people.png); */
+  background-color: black;
+  background-size: cover;
+  height: calc(100svh - 5.5rem);
 }
 
-.hero-wrapper>img {
-  border-radius: 1rem;
-  object-fit: cover;
+.hero-text-container {
+  max-width: 80ch;
 }
 
 .hero-text-container>button {
   background-color: var(--clr-accent);
+  cursor: pointer;
   padding: 1rem;
   border-radius: 0.5em;
   border-style: none;
   max-width: fit-content;
 }
 
-.image-wrapper>img {
-  border-radius: 1rem;
-}
-
-@media (max-width: 972px) {
+@media (max-width: 60.75em) {
   .hero-wrapper {
     padding: 1rem 2rem 1rem 2rem;
-    grid-template-areas:
-      "image"
-      "text";
+    justify-content: center;
+    height: calc(100svh - 5.5rem);
   }
 
   .hero-text-container {
-    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100ch;
   }
 
-  .image-wrapper {
-    grid-area: image;
+}
+
+@media (max-width: 46.875em) {
+  .hero-wrapper {
+    height: calc(100svh - 4.625rem);
   }
 }

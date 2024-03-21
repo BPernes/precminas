@@ -1,5 +1,6 @@
 export interface IconListProps {
 	items: Array<ListItem>
+	orientation: 'row' | 'column'
 }
 
 export interface ListItem {

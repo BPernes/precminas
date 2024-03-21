@@ -45,7 +45,7 @@ const Navbar = () => {
       </nav>
 
       <button onClick={handleNavMenuClick} className='mobile-nav-toggle' aria-controls='primary-navigation' aria-expanded={isExpanded}><span className='mobile-nav-toggle sr-only'>Menu</span></button>
-      <button className='ligueButton flex text-white fs-title fw-bold'>
+      <button className='ligueButton | flex text-white fs-title fw-bold'>
         Ligue agora
         <img src={phone} alt='ícone de telefone' />
       </button>

@@ -1,0 +1,22 @@
+.why-choose-us {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 10rem 2rem 10rem;
+
+  /* background-image: url(/src/assets/images/planning.png); */
+  background-color: #000000;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 60.75em) {
+  .why-choose-us {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 46.875em) {
+  .why-choose-us>h2 {
+    text-align: center;
+  }
+}

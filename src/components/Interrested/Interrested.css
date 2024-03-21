@@ -1,1 +1,47 @@
+.interrested {
+	--gap: 2rem;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 
+	/* background-image: url(../../assets/images/one-one_tiny.png); */
+	background-size: cover;
+	background-color: var(--clr-accent);
+}
+
+.interrested>p {
+	max-width: 60ch;
+}
+
+.formButton,
+.zapButton {
+	--gap: 1rem;
+	align-items: center;
+	padding: 1rem;
+	border-radius: 0.5em;
+	border-style: none;
+}
+
+.formButton {
+	background-color: var(--clr-primary);
+}
+
+.zapButton {
+	background-color: var(--clr-secondary);
+}
+
+@media (max-width: 46.875em) {
+	.interrested {
+		--gap: 2rem;
+	}
+
+	.button-container {
+		--gap: 1rem;
+		flex-direction: column;
+	}
+
+	.zapButton {
+		align-self: center;
+	}
+}
