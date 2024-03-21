@@ -43,8 +43,8 @@ const ContactForm = () => {
           name='mensagem'
           id='mensagem'
           placeholder='Como podemos te ajudar?'
-          cols='30'
-          rows='5'
+          cols={30}
+          rows={5}
         ></textarea>
         <button className='form-button | fs-title fw-bold text-white' type='submit'>Enviar</button>
       </div>
