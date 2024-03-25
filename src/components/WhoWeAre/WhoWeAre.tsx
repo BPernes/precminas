@@ -2,7 +2,7 @@ import './WhoWeAre.css'
 
 const WhoWeAre = () => {
   return (
-    <section className='who-we-are | flow'>
+    <section id='sobre' className='who-we-are | flow'>
       <h2 className='fs-h3 text-white'>Quem somos?</h2>
       <p className='description | fs-title fw-semi-bold text-white'>
         A <span className='fs-title'>PRECMINAS</span> é uma empresa de
