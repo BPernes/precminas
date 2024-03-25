@@ -19,13 +19,18 @@ const ContactForm = () => {
   const [isFormDisabled, setIsFormDisabled] = useState(false)
   const [snackbarType, setSnackbarType] = useState('')
 
-
   const sendEmail = (e: SyntheticEvent) => {
     e.preventDefault()
     setIsFormDisabled(true)
 
     if (form.current) {
-      emailjs.sendForm(emailVariables.serviceId, emailVariables.templateId, form.current, emailVariables.publicKey)
+      emailjs
+        .sendForm(
+          emailVariables.serviceId,
+          emailVariables.templateId,
+          form.current,
+          emailVariables.publicKey,
+        )
         .then(
           () => {
             console.log('SUCCESS!')
@@ -38,18 +43,26 @@ const ContactForm = () => {
             setSnackbarType('error')
             snackbarContext.displayMsg()
             setIsFormDisabled(false)
-          }
+          },
         )
     }
     if (e.target) {
-      (e.target as HTMLFormElement).reset()
+      ;(e.target as HTMLFormElement).reset()
     }
   }
 
   return (
-    <form ref={form} onSubmit={sendEmail} action='submit' method='post' className='contact-form-wrapper | flex'>
+    <form
+      ref={form}
+      onSubmit={sendEmail}
+      action='submit'
+      method='post'
+      className='contact-form-wrapper | flex'
+    >
       <div className='form-input'>
-        <label className='fs-title fw-bold text-white' htmlFor='nome'>Seu nome</label>
+        <label className='fs-title fw-bold text-white' htmlFor='nome'>
+          Seu nome
+        </label>
         <input
           disabled={isFormDisabled}
           ref={inputRef}
@@ -62,7 +75,9 @@ const ContactForm = () => {
         />
       </div>
       <div className='form-input'>
-        <label className='fs-title fw-bold text-white' htmlFor='email'>Email</label>
+        <label className='fs-title fw-bold text-white' htmlFor='email'>
+          Email
+        </label>
         <input
           disabled={isFormDisabled}
           className='fs-body'
@@ -74,7 +89,9 @@ const ContactForm = () => {
         />
       </div>
       <div className='form-input'>
-        <label className='fs-title fw-bold text-white' htmlFor='assunto'>Assunto</label>
+        <label className='fs-title fw-bold text-white' htmlFor='assunto'>
+          Assunto
+        </label>
         <input
           disabled={isFormDisabled}
           className='fs-body'
@@ -86,7 +103,9 @@ const ContactForm = () => {
         />
       </div>
       <div className='form-input'>
-        <label className='fs-title fw-bold text-white' htmlFor='mensagem'>Mensagem</label>
+        <label className='fs-title fw-bold text-white' htmlFor='mensagem'>
+          Mensagem
+        </label>
         <textarea
           disabled={isFormDisabled}
           className='fs-body'
@@ -96,9 +115,25 @@ const ContactForm = () => {
           cols={30}
           rows={5}
         ></textarea>
-        <button disabled={isFormDisabled} className='form-button | fs-title fw-bold text-white flex' value='send' type='submit'>{isFormDisabled ? (<img src={loading} alt='Círculo girando, indicando carregamento' />) : 'Enviar'}</button>
+        <button
+          disabled={isFormDisabled}
+          className='form-button | fs-title fw-bold text-white flex'
+          value='send'
+          type='submit'
+        >
+          {isFormDisabled ? (
+            <img src={loading} alt='Círculo girando, indicando carregamento' />
+          ) : (
+            'Enviar'
+          )}
+        </button>
       </div>
-      {snackbarContext.isDisplayed && (snackbarType === 'success' ? (<Snackbar type='success' />) : (<Snackbar type='error' />))}
+      {snackbarContext.isDisplayed &&
+        (snackbarType === 'success' ? (
+          <Snackbar type='success' />
+        ) : (
+          <Snackbar type='error' />
+        ))}
     </form>
   )
 }

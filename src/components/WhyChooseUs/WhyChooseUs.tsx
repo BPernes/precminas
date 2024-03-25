@@ -28,7 +28,9 @@ const WhyChooseUs = () => {
   ]
   return (
     <section className='why-choose-us'>
-      <h2 className='section-header | fs-h3 text-white'>Por que nos escolher?</h2>
+      <h2 className='section-header | fs-h3 text-white'>
+        Por que nos escolher?
+      </h2>
       <IconList items={perksList} orientation='column' />
     </section>
   )

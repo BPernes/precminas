@@ -8,7 +8,6 @@ import Contact from './components/Contact/Contact.tsx'
 import Footer from './components/Footer/Footer.tsx'
 import InputRefContextProvider from './contexts/InputRefProvider/InputRefProvider.tsx'
 
-
 function App() {
   return (
     <InputRefContextProvider>

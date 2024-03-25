@@ -19,13 +19,20 @@ const Interrested = () => {
         WhatsApp.
       </p>
       <div className='button-container | flex'>
-        <button onClick={handleClick} className='formButton | flex text-white fs-title fw-bold'>
+        <button
+          onClick={handleClick}
+          className='formButton | flex text-white fs-title fw-bold'
+        >
           Preencha o formulário
-          <img src={arrow_down} alt="seta para baixo" />
+          <img src={arrow_down} alt='seta para baixo' />
         </button>
-        <a href='https://wa.me/5531991035736?text=Gostaria%20de%20negociar%20meu%20precatório' className='zapButton | flex text-white fs-title fw-bold' target='_blank'>
+        <a
+          href='https://wa.me/5531991035736?text=Gostaria%20de%20negociar%20meu%20precatório'
+          className='zapButton | flex text-white fs-title fw-bold'
+          target='_blank'
+        >
           Fale conosco
-          <img src={zap} alt="ícone de telefone dentro de um balão" />
+          <img src={zap} alt='ícone de telefone dentro de um balão' />
         </a>
       </div>
     </section>

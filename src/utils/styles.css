@@ -27,15 +27,15 @@
 }
 
 .text-white {
-  color: var(--clr-text-white)
+  color: var(--clr-text-white);
 }
 
 .text-accent {
-  color: var(--clr-accent)
+  color: var(--clr-accent);
 }
 
 .text-black {
-  color: var(--clr-text-black)
+  color: var(--clr-text-black);
 }
 
 .sr-only {
@@ -59,7 +59,7 @@
   grid-auto-columns: 1fr;
 }
 
-.flow *+* {
+.flow * + * {
   margin-top: var(--flow-spacer, 1em);
 }
 

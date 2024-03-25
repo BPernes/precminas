@@ -21,7 +21,7 @@
 
   --section-padding: 2rem 10rem 2rem 10rem;
 
-  --clr-disabled: hsl(0, 0%, 85%, 100%)
+  --clr-disabled: hsl(0, 0%, 85%, 100%);
 }
 
 @media (max-width: 60.75em) {

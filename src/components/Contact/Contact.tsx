@@ -2,7 +2,6 @@ import './Contact.css'
 import ContactForm from '../ContactForm/ContactForm'
 
 const Contact = () => {
-
   return (
     <section className='contact-section | section-spacing'>
       <h2 className='fs-h3 text-white'>Contato</h2>

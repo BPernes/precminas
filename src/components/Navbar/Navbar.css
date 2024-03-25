@@ -92,5 +92,4 @@ li {
   .mobile-nav-toggle[aria-expanded='true'] {
     background-image: url('/src/assets/icons/close.svg');
   }
-
 }

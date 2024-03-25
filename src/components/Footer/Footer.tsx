@@ -6,7 +6,6 @@ import zap from '../../assets/icons/zap.svg'
 import insta from '../../assets/icons/insta.svg'
 
 const Footer = () => {
-
   const contactInfo = [
     {
       title: 'contato@precminas.com.br',
@@ -24,7 +23,10 @@ const Footer = () => {
 
   return (
     <footer className='flex'>
-      <p className='fw-semi-bold text-white'><span className='fw-semi-bold'>PRECMINAS</span> | 2024 © Todos os direitos reservados</p>
+      <p className='fw-semi-bold text-white'>
+        <span className='fw-semi-bold'>PRECMINAS</span> | 2024 © Todos os
+        direitos reservados
+      </p>
       <IconList items={contactInfo} orientation='row'></IconList>
     </footer>
   )

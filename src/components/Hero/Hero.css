@@ -16,7 +16,7 @@
   max-width: 80ch;
 }
 
-.hero-text-container>button {
+.hero-text-container > button {
   background-color: var(--clr-accent);
   cursor: pointer;
   padding: 1rem;
@@ -39,7 +39,6 @@
     text-align: center;
     max-width: 100ch;
   }
-
 }
 
 @media (max-width: 46.875em) {

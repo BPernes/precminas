@@ -17,7 +17,7 @@
   max-width: 60ch;
 }
 
-.description>span {
+.description > span {
   color: var(--clr-primary);
 }
 
