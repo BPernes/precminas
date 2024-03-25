@@ -37,17 +37,29 @@ const Navbar = () => {
           className='primary-nav-itens flex'
         >
           <li>
-            <a onClick={handleLinkClick} className='link text-white fw-bold fs-title' href='#início'>
+            <a
+              onClick={handleLinkClick}
+              className='link text-white fw-bold fs-title'
+              href='#início'
+            >
               Início
             </a>
           </li>
           <li>
-            <a onClick={handleLinkClick} className='link text-white fw-bold fs-title' href='#sobre'>
+            <a
+              onClick={handleLinkClick}
+              className='link text-white fw-bold fs-title'
+              href='#sobre'
+            >
               Sobre
             </a>
           </li>
           <li>
-            <a onClick={handleLinkClick} className='link text-white fw-bold fs-title' href='#contato'>
+            <a
+              onClick={handleLinkClick}
+              className='link text-white fw-bold fs-title'
+              href='#contato'
+            >
               Contato
             </a>
           </li>
