@@ -25,9 +25,6 @@ const Footer = () => {
   return (
     <footer className='flex'>
       <p className='fw-semi-bold text-white'><span className='fw-semi-bold'>PRECMINAS</span> | 2024 © Todos os direitos reservados</p>
-      <a href='' className='privacy-policy | fw-semi-bold'>
-        Política de privacidade
-      </a>
       <IconList items={contactInfo} orientation='row'></IconList>
     </footer>
   )

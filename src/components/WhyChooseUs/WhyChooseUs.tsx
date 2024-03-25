@@ -8,7 +8,7 @@ import map from '../../assets/icons/map.svg'
 const WhyChooseUs = () => {
   const perksList = [
     {
-      title: 'Expertise juríridca',
+      title: 'Competência juríridca',
       description:
         'Nossa equipe jurídica altamente especializada domina as complexidades do direito creditório',
       iconPath: briefcase,

@@ -21,15 +21,22 @@
 
   --section-padding: 2rem 10rem 2rem 10rem;
 
+  --clr-disabled: hsl(0, 0%, 85%, 100%)
 }
 
 @media (max-width: 60.75em) {
   :root {
-    --fs-main-header: 2.25rem;
+    --fs-main-header: 2.5rem;
     --fs-title: 1rem;
     --fs-body: 0.8rem;
 
     --section-padding: 1rem 2rem 1rem 2rem;
+  }
+}
+
+@media (max-width: 46.875em) {
+  :root {
+    --fs-main-header: 2rem;
   }
 }
 

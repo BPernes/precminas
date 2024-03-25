@@ -15,7 +15,7 @@ const Interrested = () => {
       <p className='fs-body fw-semi-bold text-white'>
         Para esclarecer dúvidas, discutir suas necessidades específicas ou dar o
         primeiro passo em direção ao sucesso financeiro, preencha o formulário
-        abaixo para nos enviar um email, ou, entre em contato diretamente pelo
+        abaixo para nos enviar um email ou entre em contato diretamente pelo
         WhatsApp.
       </p>
       <div className='button-container | flex'>

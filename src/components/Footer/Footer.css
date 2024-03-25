@@ -10,7 +10,6 @@ footer {
 	background-color: var(--clr-accent);
 }
 
-.privacy-policy,
 footer>p>span {
 	text-align: center;
 	color: var(--clr-primary);

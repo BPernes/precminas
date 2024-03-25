@@ -4,7 +4,7 @@
 	background-color: var(--clr-secondary);
 	border-radius: 1rem;
 	padding: 1rem 1.5rem;
-	max-width: 30rem;
+	max-width: 34rem;
 	margin-top: 2rem;
 }
 
@@ -14,6 +14,7 @@
 }
 
 .form-button {
+	justify-content: center;
 	cursor: pointer;
 	margin-top: 1rem;
 	padding: 0.25rem 0.5rem;
@@ -22,6 +23,16 @@
 	border-radius: 0.5rem;
 	border-style: none;
 	background-color: var(--clr-primary);
+}
+
+.form-button:disabled {
+	justify-content: center;
+	cursor: progress;
+	background-color: hsl(210, 7.7%, 94.9%)
+}
+
+.form-button:disabled>img {
+	width: 1.5rem;
 }
 
 textarea,
@@ -43,6 +54,7 @@ input:focus-visible {
 	outline: 2px solid var(--clr-primary);
 	caret-color: var(--clr-secondary);
 }
+
 
 @media (max-width: 46.875em) {
 	.contact-form-wrapper {
