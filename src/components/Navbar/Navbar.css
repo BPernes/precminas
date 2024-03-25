@@ -73,7 +73,7 @@ li {
   .mobile-nav-toggle {
     z-index: 9999;
     display: block;
-    position: absolute;
+    position: fixed;
     background-color: transparent;
     background-image: url('/src/assets/icons/hamburguer.svg');
     background-repeat: no-repeat;

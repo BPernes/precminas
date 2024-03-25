@@ -3,7 +3,7 @@ import ContactForm from '../ContactForm/ContactForm'
 
 const Contact = () => {
   return (
-    <section className='contact-section | section-spacing'>
+    <section id='contato' className='contact-section | section-spacing'>
       <h2 className='fs-h3 text-white'>Contato</h2>
       <p className='fs-body fs-title text-white'>
         Se você está pronto para explorar o vasto mundo das oportunidades, entre

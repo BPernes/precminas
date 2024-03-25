@@ -16,8 +16,15 @@ const Navbar = () => {
     setIsExpanded(false)
   }
 
+  const handleLinkClick = () => {
+    if (isNavMenuOpen) {
+      setIsNavMenuOpen(false)
+      setIsExpanded(false)
+    }
+  }
+
   return (
-    <header className='flex'>
+    <header id='início' className='flex'>
       <div className='header-logo flex'>
         <img src={logo} alt='três letras p juntas, formando uma caixa' />
         <span className='fw-bold text-white fs-title'>PRECMINAS</span>
@@ -30,17 +37,17 @@ const Navbar = () => {
           className='primary-nav-itens flex'
         >
           <li>
-            <a className='link text-white fw-bold fs-title' href='#início'>
+            <a onClick={handleLinkClick} className='link text-white fw-bold fs-title' href='#início'>
               Início
             </a>
           </li>
           <li>
-            <a className='link text-white fw-bold fs-title' href='#sobre'>
+            <a onClick={handleLinkClick} className='link text-white fw-bold fs-title' href='#sobre'>
               Sobre
             </a>
           </li>
           <li>
-            <a className='link text-white fw-bold fs-title' href='#contato'>
+            <a onClick={handleLinkClick} className='link text-white fw-bold fs-title' href='#contato'>
               Contato
             </a>
           </li>
