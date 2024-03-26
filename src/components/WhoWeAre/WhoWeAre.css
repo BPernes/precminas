@@ -4,7 +4,7 @@
       rgba(45, 76, 139, 1) 0%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url(/src/assets/images/metting.png);
+    url(/src/assets/images/meeting.webp);
   background-color: var(--clr-accent);
   background-size: cover;
   background-repeat: no-repeat;

@@ -10,7 +10,7 @@
       rgba(45, 76, 139, 1) 20%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url(../../assets/images/one-one.png);
+    url(../../assets/images/one-one.webp);
   background-size: cover;
   background-color: var(--clr-accent);
 }
