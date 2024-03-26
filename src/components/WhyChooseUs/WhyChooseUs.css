@@ -3,10 +3,14 @@
   flex-direction: column;
   padding: 2rem 10rem 2rem 10rem;
 
-  background-image:
-    linear-gradient(90deg, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 100%),
-    url(/src/assets/images/planning.png);
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 30%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(/src/assets/images/planning.webp);
   background-color: #000000;
+  background-position: center;
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -19,7 +23,7 @@
 }
 
 @media (max-width: 46.875em) {
-  .why-choose-us>h2 {
+  .why-choose-us > h2 {
     text-align: center;
   }
 }

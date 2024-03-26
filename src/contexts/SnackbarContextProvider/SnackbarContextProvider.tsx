@@ -2,8 +2,8 @@ import { ReactNode, useState, createContext } from 'react'
 
 const SnackbarContext = createContext({
   isDisplayed: false,
-  displayMsg: () => { },
-  onClose: () => { },
+  displayMsg: () => {},
+  onClose: () => {},
 })
 
 type SnackbarContextProviderProps = {

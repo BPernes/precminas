@@ -1,7 +1,10 @@
 .who-we-are {
-  background-image:
-    linear-gradient(180deg, rgba(45, 76, 139, 1) 0%, rgba(0, 0, 0, 0) 100%),
-    url(/src/assets/images/metting.png);
+  background-image: linear-gradient(
+      180deg,
+      rgba(45, 76, 139, 1) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(/src/assets/images/meeting.webp);
   background-color: var(--clr-accent);
   background-size: cover;
   background-repeat: no-repeat;
@@ -20,7 +23,7 @@
   max-width: 60ch;
 }
 
-.description>span {
+.description > span {
   color: var(--clr-primary);
 }
 

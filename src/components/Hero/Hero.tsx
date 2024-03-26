@@ -15,8 +15,8 @@ const Hero = () => {
             Consultoria em direito creditório, seguros e investimentos
           </h1>
           <p className='fs-title text-white fw-semi-bold'>
-            Conte conosco para oferecer uma experiência descomplicada, guiando-o
-            através do processo com a expertise que você merece
+            Conte conosco para proporcionar uma jornada simples e sem
+            preocupações, conduzindo-o com a excelência que você merece.
           </p>
           <button
             onClick={handleClick}
