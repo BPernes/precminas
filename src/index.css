@@ -24,7 +24,7 @@
   --clr-disabled: hsl(0, 0%, 85%, 100%);
 }
 
-@media (max-width: 60.75em) {
+@media (max-width: 72em) {
   :root {
     --fs-main-header: 2.5rem;
     --fs-title: 1rem;
