@@ -12,7 +12,7 @@ const Footer = () => {
       iconPath: email,
     },
     {
-      title: '+55 (31) 9103-5736',
+      title: '+55 (31) 99103-5736',
       iconPath: zap,
     },
     {

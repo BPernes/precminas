@@ -13,6 +13,7 @@
     url(../../assets/images/one-one.webp);
   background-size: cover;
   background-color: var(--clr-accent);
+  background-position: center;
 }
 
 .interrested > p {
