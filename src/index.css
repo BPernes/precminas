@@ -19,7 +19,7 @@
   --fs-body: 1rem;
   --fs-caption: 0.5rem;
 
-  --section-padding: 2rem 10rem 2rem 10rem;
+  --section-padding: 2rem 10rem;
 
   --clr-disabled: hsl(0, 0%, 85%, 100%);
 }
@@ -30,7 +30,7 @@
     --fs-title: 1rem;
     --fs-body: 0.8rem;
 
-    --section-padding: 1rem 2rem 1rem 2rem;
+    --section-padding: 1rem 2rem;
   }
 }
 

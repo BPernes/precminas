@@ -1,5 +1,6 @@
 .interrested {
   --gap: 2rem;
+  --section-padding: 5rem 10rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -39,8 +40,15 @@
   text-decoration: none;
 }
 
+@media (max-width: 72em) {
+  .interrested {
+    --section-padding: 5rem 2rem;
+  }
+}
+
 @media (max-width: 46.875em) {
   .interrested {
+    --section-padding: 2rem;
     --gap: 2rem;
   }
 
