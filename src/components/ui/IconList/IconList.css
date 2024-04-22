@@ -32,6 +32,7 @@
 }
 
 .row > .item-icon-container {
+  text-align: left;
   --gap: 0.5rem;
 }
 
