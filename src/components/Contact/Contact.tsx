@@ -5,6 +5,7 @@ import email from '../../assets/icons/email.svg'
 import zap from '../../assets/icons/zap.svg'
 import insta from '../../assets/icons/insta.svg'
 import map_pin from '../../assets/icons/map-pin.svg'
+import phone from '../../assets/icons/phone.svg'
 
 const Contact = () => {
   const contactInfo = [
@@ -23,6 +24,10 @@ const Contact = () => {
     {
       title: 'Rua Timbiras, 1940 - Sala 1714 - Lourdes - Belo Horizonte',
       iconPath: map_pin,
+    },
+    {
+      title: '31 3058-9844',
+      iconPath: phone,
     },
   ]
 
