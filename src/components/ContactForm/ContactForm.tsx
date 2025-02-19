@@ -47,7 +47,7 @@ const ContactForm = () => {
         )
     }
     if (e.target) {
-      ;(e.target as HTMLFormElement).reset()
+      (e.target as HTMLFormElement).reset()
     }
   }
 
